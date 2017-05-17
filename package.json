@@ -1,0 +1,29 @@
+{
+  "name": "is-valid-github-event",
+  "description": "Validate GitHub webhook events.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/doowb/is-valid-github-event",
+  "author": "Brian woodward (https://doowb.com)",
+  "repository": "doowb/is-valid-github-event",
+  "bugs": {
+    "url": "https://github.com/doowb/is-valid-github-event/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "event",
+    "github",
+    "is",
+    "valid"
+  ]
+}
