@@ -24,5 +24,11 @@
     "github",
     "is",
     "valid"
-  ]
+  ],
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "kind-of": "^3.2.2",
+    "safe-compare": "^1.0.3",
+    "typeof-github-event": "^0.1.1"
+  }
 }
