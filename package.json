@@ -30,5 +30,8 @@
     "kind-of": "^3.2.2",
     "safe-compare": "^1.0.3",
     "typeof-github-event": "^0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.1"
   }
 }

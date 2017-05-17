@@ -32,6 +32,10 @@ var event = require('typeof-github-event');
  */
 
 module.exports = function(req, secret, options) {
+  if (typeOf(req) === 'undefined') {
+    throw new TypeError('expected first argument to be a request object');
+  }
+
   if (typeOf(secret) === 'object') {
     options = secret;
     secret = null;
