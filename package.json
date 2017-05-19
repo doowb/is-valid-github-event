@@ -14,17 +14,11 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "event",
-    "github",
-    "is",
-    "valid"
-  ],
   "dependencies": {
     "extend-shallow": "^2.0.1",
     "kind-of": "^3.2.2",
@@ -35,6 +29,12 @@
     "gulp-format-md": "^0.1.12",
     "mocha": "^3.4.1"
   },
+  "keywords": [
+    "event",
+    "github",
+    "is",
+    "valid"
+  ],
   "verb": {
     "toc": false,
     "layout": "default",
