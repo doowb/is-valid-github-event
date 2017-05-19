@@ -50,17 +50,19 @@ module.exports = function(req, secret, options) {
     var hmac = crypto.createHmac('sha1', secret)
         .update(JSON.stringify(payload, null, 0))
         .digest('hex');
-    valid = compare(signature, `sha1=${hmac}`);
+    valid = compare(signature, 'sha1=' + hmac);
   }
 
   if (valid === true && typeOf(opts.event) !== 'undefined') {
     var events = arrayify(opts.event);
+    var found = false;
     for (var i = 0; i < events.length; i++) {
-      if(!event.is(events[i], payload)) {
-        valid = false;
+      if(event.is(events[i], payload)) {
+        found = true;
         break;
       }
     }
+    valid = found;
   }
 
   if (valid === true && typeOf(opts.action) !== 'undefined') {
