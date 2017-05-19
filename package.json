@@ -29,7 +29,7 @@
     "extend-shallow": "^2.0.1",
     "kind-of": "^3.2.2",
     "safe-compare": "^1.0.3",
-    "typeof-github-event": "^0.1.1"
+    "typeof-github-event": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^3.4.1"
